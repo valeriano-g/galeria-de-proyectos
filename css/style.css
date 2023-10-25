@@ -1,3 +1,73 @@
-h1 {
-  color: azure;
+@charset "UTF-8";
+.header-container {
+  display: flex;
+  padding: 4em;
+  background-image: url(../img/background.jpg);
+  color: white;
+}
+
+.header-title {
+  text-transform: capitalize;
+  font-size: 3em;
+  width: 50px;
+  line-height: 1.4em;
+}
+
+.header-title::after {
+  content: "";
+  border: 1px solid white;
+  width: 1em;
+  display: flex;
+}
+
+.img-header {
+  width: 800px;
+}
+
+.separetor {
+  margin-top: 3em;
+  margin-right: 3em;
+}
+.separetor button {
+  border-radius: 4px;
+  background-color: #1461ff;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+.separetor button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.separetor button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+.separetor button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.separetor button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
