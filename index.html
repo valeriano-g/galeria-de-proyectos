@@ -6,64 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Galeria de proyectos</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Scada&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
     <!--header-->
-    <header class="header-container" id="header-sec">
+    <section class="header-sec">
+        <header class="header-container" id="header-sec">
 
-        <figure>
-            <img class="img-header" src="./img/portfolio.png" alt="portfolio">
-        </figure>
+            <figure>
+                <img class="img-header" src="./img/portfolio.png" alt="portfolio">
+            </figure>
 
 
-        <div class="separetor">
-            <h1 class="header-title">Galeria de proyectos.</h1>
-            <span class="line"></span>
-            <button class="header-btn"><span>ver portafolio</span></button>
-        </div>
-        </div>
-    </header>
-
+            <div class="separetor">
+                <h1 class="header-title">Galeria de proyectos.</h1>
+                <span class="line"></span>
+                <button class="header-btn"><span>ver portafolio</span></button>
+            </div>
+            </div>
+        </header>
+    </section>
     <!--header-finished-->
     <!--PROYECTS-->
     <section class="proyects-container" id="projects">
-        <h2 class="subtitle">otros proyectos</h2>
-        <span class="line2"></span>
+        <div class="container-line">
+            <h2 class="title-proyects">Otros proyectos</h2>
+            <span class="line2"></span>
+        </div>
         <article class="proyect-container">
-            <figure>
-                <figcaption class="title-proyect">titulo aqui</figcaption>
-                <img class="img-article" id="" src="" alt="">
-                <div class="icons-container">
+            <div class="subcontainer">
+                <figure>
+                    <figcaption class="title-proyect">proyecto pagina crypto</figcaption>
+                    <img class="img-proyect" id="" src="/img/crypto website.png" alt="pagina crypto proyecto">
 
-                    <ul>
-                        <li class="icons"></li>
-                        <li class="icons"></li>
+                    <ul class="list-icons">
+                        <li class="li-icons"><a class="icons" href="http://" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="li-icons"><a class="icons" href="http://" target="_blank" rel="noopener noreferrer">
+                                <span class="material-symbols-outlined" id="view-icon">preview
+                                </span> </a></li>
                     </ul>
 
-                </div>
+            </div>
             </figure>
+
         </article>
 
     </section>
     <!--PROYECTS FINISHED-->
 
     <!--FOOTER-->
-    <footer>
-        <P>pongase en contacto</P>
-        <h5>vamos a trabajar juntos</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores nobis non laudantium facere a
-            aspernatur ratione ipsa voluptatum veniam cupiditate tenetur, asperiores magnam dolorum eligendi aperiam
-            laboriosam? Maxime, quibusdam.</p>
-        <figure>
-            <img src="" alt="valeriano developer">
-            <figcaption></figcaption>
-        </figure>
-    </footer>
-
+    <section class="footer-sec">
+        <footer class="footer-container">
+            <P class="pre-title-f">pongase en contacto</P>
+            <h5 class="title-f">vamos a trabajar juntos</h5>
+            <p class="text-f">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores nobis non laudantium
+                facere a
+                aspernatur ratione ipsa voluptatum veniam cupiditate tenetur, asperiores magnam dolorum eligendi aperiam
+                laboriosam? Maxime, quibusdam.</p>
+            <figure>
+                <img src="" alt="valeriano developer">
+                <figcaption></figcaption>
+            </figure>
+        </footer>
+    </section>
 
     <!--FOOTER-FINISHED-->
+    <script src="https://kit.fontawesome.com/42636aa1c3.js" crossorigin="anonymous"></script>
+
 </body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+</style>
 
 </html>
