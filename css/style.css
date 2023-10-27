@@ -24,6 +24,11 @@
   width: 800px;
 }
 
+.link-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
 .separetor {
   margin-top: 3em;
   margin-right: 3em;
@@ -109,7 +114,7 @@
 }
 
 .img-proyect {
-  max-width: 350px;
+  max-width: 420px;
   border-radius: 5%;
 }
 
@@ -125,19 +130,50 @@
   font-size: 28px;
 }
 
+.icons:hover {
+  color: #1461ff;
+}
+
 #view-icon {
   font-size: 34px;
   padding: 15px;
 }
 
-.icons:hover {
-  color: #1461ff;
+.li-icons:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .proyects-container-d {
-  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.img-proyect {
+  max-width: 400px;
+  border-radius: 5%;
+  height: auto;
+}
+
+.video-proyect {
+  max-width: 400px;
+  border-radius: 5%;
+  height: auto;
 }
 
 .footer-container {
