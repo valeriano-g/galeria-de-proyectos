@@ -65,7 +65,7 @@
   right: 10px;
 }
 
-.proyects-container {
+.proyects-sec {
   padding: 4em;
   background-color: #F4F5F7;
 }
@@ -132,6 +132,14 @@
 
 .icons:hover {
   color: #1461ff;
+}
+
+.proyects-container-d {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 7px;
 }
 
 .footer-container {
