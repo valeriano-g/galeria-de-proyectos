@@ -8,6 +8,10 @@ $color-header: black;
     background-image: url(../img/background.jpg);
     color: $color-text;
 
+    .img-header {
+
+        width: 800px;
+    }
 
 }
 
@@ -33,10 +37,7 @@ $color-header: black;
 
 ///
 
-.img-header {
 
-    width: 800px;
-}
 
 .link-btn {
     text-decoration: none;

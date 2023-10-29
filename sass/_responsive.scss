@@ -1,0 +1,95 @@
+//tablets
+@media only screen and (max-width:1024px),
+(max-width:884px) {
+
+    .header-container {
+        padding: 2em;
+        text-align: center;
+        justify-content: center;
+
+        .img-header {
+            display: none;
+        }
+
+        .header-title {
+            text-transform: capitalize;
+            font-size: 3em;
+            width: auto;
+            line-height: 1.4em;
+
+        }
+
+        .header-title::after {
+            display: none;
+        }
+
+        #video-project1 {
+            max-width: 500px;
+        }
+
+        .img-proyect {
+            width: 700px;
+        }
+
+    }
+
+    .title-proyects {
+
+        font-size: 45px;
+
+    }
+
+    .proyects-container-d {
+        justify-content: center;
+        gap: 40px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    //footer
+    .img-footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .img-footer {
+        width: 45px;
+
+    }
+
+    .img-footer-container {
+
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    //celulares
+    @media only screen and (max-width:430px) {
+        .header-container {
+            flex-direction: column;
+
+            .img-header {
+                display: none;
+            }
+        }
+
+        .title-proyects {
+
+            font-size: 38px;
+
+        }
+
+        #video-project1 {
+            width: 350px;
+        }
+
+        .img-proyect {
+            width: 350px;
+        }
+
+    }
+}

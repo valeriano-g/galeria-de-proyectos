@@ -5,6 +5,9 @@
   background-image: url(../img/background.jpg);
   color: white;
 }
+.header-container .img-header {
+  width: 800px;
+}
 
 .header-title {
   text-transform: capitalize;
@@ -18,10 +21,6 @@
   border: 1px solid white;
   width: 1em;
   display: flex;
-}
-
-.img-header {
-  width: 800px;
 }
 
 .link-btn {
@@ -161,19 +160,46 @@
   gap: 50px;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
 }
 
 .img-proyect {
   max-width: 400px;
   border-radius: 5%;
   height: auto;
+  view-timeline-name: --revealing-image;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 50%;
 }
 
 .video-proyect {
   max-width: 400px;
   border-radius: 5%;
   height: auto;
+  view-timeline-name: --revealing-image;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 50%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.icon-li {
+  padding: 0px 5px;
+}
+
+.icon-i2 {
+  width: 25px;
 }
 
 .footer-container {
@@ -203,6 +229,89 @@
   color: white;
 }
 
+.img-footer {
+  width: 30px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.img-footer-container {
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.img-footer-container figcaption {
+  transform: translateY(3px);
+}
+
+.link-textF {
+  text-decoration: none;
+  color: #1461ff;
+}
+
+@media only screen and (max-width: 1024px), (max-width: 884px) {
+  .header-container {
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+  }
+  .header-container .img-header {
+    display: none;
+  }
+  .header-container .header-title {
+    text-transform: capitalize;
+    font-size: 3em;
+    width: auto;
+    line-height: 1.4em;
+  }
+  .header-container .header-title::after {
+    display: none;
+  }
+  .header-container #video-project1 {
+    max-width: 500px;
+  }
+  .header-container .img-proyect {
+    width: 700px;
+  }
+  .title-proyects {
+    font-size: 45px;
+  }
+  .proyects-container-d {
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img-footer {
+    width: 45px;
+  }
+  .img-footer-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1024px) and (max-width: 430px), only screen and (max-width: 884px) and (max-width: 430px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-container .img-header {
+    display: none;
+  }
+  .title-proyects {
+    font-size: 38px;
+  }
+  #video-project1 {
+    width: 350px;
+  }
+  .img-proyect {
+    width: 350px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
